@@ -10,4 +10,49 @@
 <body>
   <app-root></app-root>
 <script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="main-es2015.4562873c03d96fb7195b.js" type="module"></script><script src="main-es5.4562873c03d96fb7195b.js" nomodule defer></script></body>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    let div = document.createElement('div');
+    div.style.paddingTop = '100px';
+    document.getElementById('banner').prepend(div);
+
+    let div2 = document.createElement('div');
+    div2.style.padding = '40px';
+    div2.style.background = 'url(banner.8ebf072a6a2a81097b36.png) center/cover no-repeat';
+    div2.style.textAlign = 'center';
+    div.append(div2);
+
+    let p = document.createElement('p');
+    p.style.fontSize = '3em';
+    p.innerText = 'POSTPONEMENT NOTICE';
+    div2.append(p);
+
+    let hr = document.createElement('div');
+    hr.className = 'divider bg-green2';
+    hr.style.width = '100%';
+    hr.style.height = '3px';
+    hr.style.maxWidth = '640px';
+    hr.style.margin = '25px auto';
+    div2.append(hr);
+
+    let p2 = document.createElement('p');
+    p2.style.marginLeft = 'auto';
+    p2.style.marginRight = 'auto';
+    p2.style.fontSize = '1.5em';
+    p2.style.maxWidth = '1024px';
+    p2.style.textAlign = 'justify';
+    p2.innerText = 'In light of the Department of Health (DOH) Advisory on Concerts and Other Public Events and Gatherings discouraging the gathering of large crowds in a single venue, we have decided to postpone the ICSL 2020 until further notice. For participants who have already registered, you may coordinate with the ICSL Office regarding refunds. We encourage registered participants, however, to keep their spots as conference slots remain limited.';
+    div2.append(p2);
+
+    let a = document.createElement('a');
+    a.style.marginTop = '40px';
+    a.style.padding = '10px';
+    a.style.color = '#ffffff';
+    a.className = 'bg-green3';
+    a.innerText = 'For more information about the postponement, DOH advisory, and ICSL contact details, click here.';
+    a.setAttribute('href', 'https://drive.google.com/open?id=1gsCZDtuZosr9S22h1DBHF8xpLSWXLNuG');
+    a.setAttribute('target', '_blank');
+    div2.append(a);
+  });
+</script>
 </html>
